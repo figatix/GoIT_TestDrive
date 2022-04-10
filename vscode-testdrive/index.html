@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebDrive</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <!-- MAIN WINDOW -->
+    <div class="wrapper">
+        <!-- CONTACTS SECTION -->
+        <section class="contacts-section">
+            <a href="https://t.me/figatix" class="telegram-link"><img src="./icons/bx_bxl-telegram.svg" class="telegram-icon" alt="telegram-link"></a>
+            <a href="viber://chat?number=%2B380660359515" class="whatsapp-link"><img src="./icons/dashicons_whatsapp.svg" class="whatsapp-icon" alt="whatsapp-link"></a>
+            <a href="tel:+380660359515" class="phone-link-icon"><img src="./icons/mdi_phone.svg" class="phone-icon" alt="phone-link-icon"></a>
+            <a href="tel:+380660359515" class="phone-link-number">+38(066)035-95-15</a>
+
+        </section>
+        <!-- Exp section -->
+        <section class="exp-section">
+            <img src="./Mask GroupmyPhoto.png" alt="myPhoto" class="my-photo">
+            <div>
+                <a href="https://vk.com/ya.san40s">
+                    <img src="./icons/uil_vkvk.svg" alt="my vk link" class="icons"></a>
+                <a href="https://www.linkedin.com/in/я-не-хімік-11b248a9/">
+                    <img src="./icons/mdi_linkedin.svg" alt="my linkedin link" class="icons linkedin-icon"></a>
+                <a href="https://www.facebook.com/profile.php?id=100008348709223">
+                    <img src="./icons/mdi_facebook.svg" alt="my facebook link" class="icons"></a>       
+            </div>
+            <div class="exp-description">
+                <p class="exp-description-text exp-description-text-first">2 полуготовых проекта</p>
+                <p class="exp-description-text">0,5 года опыта</p>
+            </div>
+            <div class="tech-container">
+                <img src="./icons/mdi_language-javascript.svg" alt="js-icon" class="icons js-icon">
+                <img src="./icons/mdi_react.svg" alt="react-icon" class="icons react-icon">
+                <img src="./icons/mdi_nodejs.svg" alt="nodejs-icon" class="icons">
+            </div>
+            <a class="my-projects-link" href="https://gracious-pasteur.netlify.app/">Мои работы:</a>
+        </section>
+        <!-- MY INFO SECTION -->
+        <section class="my-info-section">
+            <h2 class="my-name-text my-name">Привет! Я - Александр</h2>
+            <h1 class="my-profession">Я делаю сайты</h1>
+            <p class="my-live-text">Живу в Киеве</p>
+            <p class="my-work-text">Работаю удаленно</p>
+            <p class="ordinary-text try-text">Я - пробую себя в роли человека-оркестра. Хочу в одиночку заменить целую веб-студию.</p>
+            <div>
+                <p class="my-name-text my-try">Не Умею, но научусь:</p>
+                <ul class="my-skills-list">
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Управлять IT-проектами и командами;</p>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Junior Front End разработчик;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Junior Back End разработчик;</p>
+                    </li>
+                    <li class="my-skills-item">
+                        <p class="my-skills-text">Проконтролировать качество своего или вашего проекта, как QA - специалист.</p>
+                    </li>
+                    
+                </ul>
+                
+                
+            </div>
+
+        </section>
+        <!-- PROJECT PRICE SECTION -->
+        <section class="project-price-section">
+            <form action="#" class="project-price-form" method="post" name="Просчет Проекта" data-netlify="true" id="project-price-form">
+                <h4 class="project-price-title">Рассчитай стоимость проекта</h4>
+                <div class="project-type-container">
+                    <label for="project-type" class="form-titles">Тип сайта</label>
+                    <select name="project-type" id="project-type" class="project-price-select">
+                        <option selected value="landing-page">Landing page</option>
+                        <option value="online-store">Online store</option>
+                        <option value="web-application">Web application</option>
+                        <option value="mobile-application">Mobile application</option>
+                    </select>
+                </div>
+                <div class="activity-type-container">
+                    <p class="form-titles">Типы работ:</p>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="project-manager" id="project-manager" class="activity-type-checkbox">
+                        <label for="project-manager" class="activity-type-title">Project Manager</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input checked type="checkbox" name="design" id="design" class="activity-type-checkbox">
+                        <label for="design" class="activity-type-title">Design</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input checked type="checkbox" name="developer" id="developer" class="activity-type-checkbox">
+                        <label for="developer" class="activity-type-title">Developer</label>
+                    </div>
+                    <div class="activity-type-item">
+                        <input type="checkbox" name="qa" id="qa" class="activity-type-checkbox">
+                        <label for="qa" class="activity-type-title">QA</label>
+                    </div>
+                </div>
+                <div class="project-price-container">
+                    <p class="form-titles">Стоимость</p>
+                    <p class="project-price-sum"><span class="dollar">$</span> <span id="totalPrice">1800</span></p>
+                </div>
+
+                <input type="hidden" name="Email">            
+
+                <div class="project-price-calc-btn-container">
+                    <button class="project-price-calc-btn">Отправить запрос</button>
+                </div>
+            </form>
+
+
+        </section>
+    </div>
+    <!-- MODAL WINDOW 1 -->
+    <div class="modal-bgd" id="modal-email">
+        <div class="modal-container">
+            <button class="modal-close-btn">
+                <img src="./icons/mdi_close.svg" alt="close-icon" class="close-icon">
+
+            </button>
+            <img src="./icons/mdi_email-fast.svg" alt="email-icon" class="modal-email-icon">
+            <h4 class="modal-title">Я свяжусь с Вами <br>на протяжении дня</h4>
+          
+            <form action="#" class="modal-form-container" id="modal-email-container">
+                <div class="email-input-container" id="email-input-container">
+                    <label for="user-email" class="user-email-title">Email</label>
+                    <input type="email"  name="user-email" id="user-email" class="user-email" placeholder="Укажите email">
+                    <p class="email-error-text">Проверьте email</p>
+                </div>
+                
+                <div class="modal-submit-btn-container">
+                    <button type="submit" class="modal-submit-btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-bgd" id="success-modal">
+        <div class="modal-container modal-container-success">
+            <button class="modal-close-btn">
+                <img src="./icons/mdi_close.svg" alt="close-icon" class="close-icon">
+            </button>
+            <img src="./icons/mdi_check-circle.svg" alt="check-icon" class="modal-check-icon">
+            <p class="modal-success-message">Ваш запрос отправлен!</p>
+           
+        </div>
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
